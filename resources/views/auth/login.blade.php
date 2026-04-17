@@ -37,41 +37,58 @@
             <x-input-error :messages="$errors->get('password')" class="mt-2 text-red-500 dark:text-red-400" />
         </div>
 
-        <!-- Remember Me -->
-        <div class="block mt-4">
+        <!-- Row 1: Remember + Forgot -->
+        <div class="flex items-center justify-between mt-4">
+
+            <!-- Remember Me -->
             <label for="remember_me" class="inline-flex items-center">
                 <input id="remember_me" type="checkbox"
                     class="rounded border-gray-300 dark:border-gray-600 
-                           text-indigo-600 shadow-sm 
-                           focus:ring-indigo-500 dark:focus:ring-indigo-400 
-                           bg-white dark:bg-gray-700"
+                   text-indigo-600 shadow-sm 
+                   focus:ring-indigo-500 dark:focus:ring-indigo-400 
+                   bg-white dark:bg-gray-700"
                     name="remember">
                 <span class="ms-2 text-sm text-gray-600 dark:text-gray-400">
                     {{ __('Remember me') }}
                 </span>
             </label>
-        </div>
 
-        <!-- Actions -->
-        <div class="flex items-center justify-between mt-4">
-
+            <!-- Forgot Password -->
             @if (Route::has('password.request'))
                 <a class="text-sm text-gray-600 dark:text-gray-400 
-                           hover:text-gray-900 dark:hover:text-gray-200 
-                           underline"
+                  hover:text-gray-900 dark:hover:text-gray-200 
+                  underline"
                     href="{{ route('password.request') }}">
                     {{ __('Forgot your password?') }}
                 </a>
             @endif
 
+        </div>
+
+        <!-- Row 2: Login Button Full Width -->
+        <div class="mt-4">
             <x-primary-button
-                class="ms-3 
-           bg-black text-white hover:bg-gray-800
-           dark:bg-white dark:text-black dark:hover:bg-gray-200
-           rounded-lg shadow-sm
-           transition duration-200">
+                class="w-full justify-center
+               bg-black text-white hover:bg-gray-800
+               dark:bg-white dark:text-black dark:hover:bg-gray-200
+               transition duration-200">
                 {{ __('Log in') }}
             </x-primary-button>
         </div>
+
+        <!-- Register Link -->
+        <div class="mt-4 text-center">
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+                Don't have an account?
+                <a href="{{ route('register') }}"
+                    class="font-medium text-indigo-600 dark:text-indigo-400 
+                  hover:text-indigo-700 dark:hover:text-indigo-300 
+                  underline transition">
+                    Register
+                </a>
+            </p>
+        </div>
+
+
     </form>
 </x-guest-layout>

@@ -29,7 +29,7 @@
 
     {{-- Loader --}}
     {{-- <x-loader /> --}}
-    <x-loader-glow/> 
+    <x-loader-glow />
     {{-- <x-loader-rotate /> --}}
 
     <!-- MAIN CONTAINER -->
@@ -48,16 +48,24 @@
 
         <!-- CARD -->
         <div
-            class="w-full sm:max-w-md
+            class="w-full sm:max-w-sm
                     p-5 sm:p-6
                     bg-white dark:bg-gray-800
                     shadow-md rounded-lg
                     transition-colors duration-300">
 
             {{ $slot }}
-
         </div>
+
+        <!-- FOOTER (below card but inside container) -->
+        <div class="mt-4 text-center">
+            <p class="text-xs text-gray-500 dark:text-gray-400">
+                © {{ date('Y') }} Auto Addict. All rights reserved.
+            </p>
+        </div>
+
     </div>
+
 
     <!-- DARK MODE TOGGLE -->
     <div class="fixed top-3 right-3 z-50">
@@ -79,8 +87,6 @@
 
         </button>
     </div>
-
-
 
 
     <!-- DARK MODE SCRIPT -->

@@ -73,7 +73,7 @@
                        hover:text-gray-900 dark:hover:text-gray-200 
                        underline"
                 href="{{ route('login') }}">
-                {{ __('Already registered?') }}
+                {{ __('Back to login') }}
             </a>
 
             <x-primary-button
