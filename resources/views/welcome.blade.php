@@ -82,7 +82,8 @@
                 Auto Addict
             </p>
 
-            <h1 class="text-3xl sm:text-5xl font-semibold tracking-tight text-gray-900 dark:text-white">
+            <h1
+                class="text-3xl sm:text-5xl font-semibold tracking-tight text-gray-900 dark:text-white sm:whitespace-nowrap">
                 Build Your Online <span class="text-yellow-500 font-bold tracking-tight">Garage</span>
             </h1>
         </div>
