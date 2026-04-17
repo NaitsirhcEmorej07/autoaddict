@@ -33,7 +33,7 @@
                        dark:bg-white dark:text-black dark:hover:bg-gray-200
                        rounded-lg shadow-sm
                        transition duration-200">
-                {{ __('Email Password Reset Link') }}
+                {{ __('Send Reset Link') }}
             </x-primary-button>
         </div>
 
