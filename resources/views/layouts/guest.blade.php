@@ -29,7 +29,7 @@
 
     {{-- Loader --}}
     {{-- <x-loader /> --}}
-    <x-loader-glow/>
+    <x-loader-glow/> 
     {{-- <x-loader-rotate /> --}}
 
     <!-- MAIN CONTAINER -->
