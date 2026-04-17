@@ -65,7 +65,7 @@
     <div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
         <div class="flex items-center gap-2">
             <img src="{{ asset('images/logo_250.png') }}" class="h-10">
-            {{-- <span class="font-semibold tracking-wide">Auto Addict</span> --}}
+            <span class="font-semibold tracking-wide">Auto Addict</span>
         </div>
 
         <div class="flex items-center gap-3">
@@ -83,12 +83,12 @@
             </p>
 
             <h1 class="text-3xl sm:text-5xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                Your Online <span class="text-yellow-500 font-bold tracking-tight">Garage</span>
+                Build Your Online <span class="text-yellow-500 font-bold tracking-tight">Garage</span>
             </h1>
         </div>
 
         <p class="mt-3 text-gray-600 dark:text-gray-400 max-w-xl mx-auto">
-            Showcase, list, and sell your cars — whether you're an individual or a business owner.
+            Showcase, list, or sell your cars — whether you're an individual or a business owner.
         </p>
 
         <div class="mt-6 flex justify-center gap-3">
@@ -106,7 +106,7 @@
     </section>
 
     <!-- BRANDS -->
-    <section class="py-5">
+    <section class="py-2">
         <div class="max-w-6xl mx-auto px-6">
 
             <!-- CLIP AREA (same width as FEATURES) -->
@@ -176,7 +176,7 @@
     </section>
 
     <!-- CTA -->
-    <section class="text-center py-16">
+    <section class="text-center py-6">
         <h2 class="text-md font-semibold">
             Start building your garage today.
         </h2>
